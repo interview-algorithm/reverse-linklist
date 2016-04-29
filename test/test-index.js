@@ -41,6 +41,7 @@ describe('reverseLinkedList', function () {
                 assert.deepEqual(head.value, 10 - i);
                 head = head.next;
             }
+            assert.equal(null, head);
         });
         it('empty linked list', function () {
             assert.equal(null, reverseLinkedList(null));
@@ -58,6 +59,7 @@ describe('reverseLinkedList', function () {
                 assert.deepEqual(head.value, 10 - i);
                 head = head.getNext();
             }
+            assert.equal(null, head);
         });
         it('empty linked list', function () {
             assert.equal(null, reverseLinkedList(null, {
